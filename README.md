@@ -6,7 +6,9 @@ This workflow gives easy access to all [Studierendenwerk Cafeterias](https://www
 
 In the first step you can select the canteen (optional argument to filter by name). Also with the `cmd`-modifier the menu for the canteen can be opend in your browser, with the `alt`-modifier you show the canteen on Google Maps.
 
-For the selected canteen the menu for current day will be displayed, or your can provide an relative or absolute day, for example:
+For the selected canteen the menu for current day will be displayed, or your can provide an relative or absolute day. 2017-09-11 is the earliest possible date.
+
+Examples:
 
 - `+2days`
 - `-10days`
@@ -14,5 +16,8 @@ For the selected canteen the menu for current day will be displayed, or your can
 - `next monday`
 
 See [strtotime()](https://www.php.net/manual/en/function.strtotime.php) for more examples.
+
+To install [download the Workflow here](https://github.com/stroebjo/alfred-mensahh/releases) and open it.
+
 
 The menu data come from [HAWHHCalendarBot/mensa-data](https://github.com/HAWHHCalendarBot/mensa-data) repository by [EdJoPaTo](https://github.com/EdJoPaTo).
