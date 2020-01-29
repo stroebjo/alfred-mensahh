@@ -265,7 +265,24 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>PRICE = Attendant|Guest|Student</string>
+	<string># Environment Variables
+
+PRICE
+-----
+Attendant|Guest|Student
+
+
+MAPS_URL 
+--------
+Used to open the canteen address on a map, has 2 placeholders:
+- %1$s - address
+- %2$s - Google place id
+
+You can use the following examples, or your own map provider:
+
+- Goggle Maps: https://www.google.com/maps/search/?api=1&amp;query=%1$s&amp;query_place_id=%2$s
+- Apple Maps: https://maps.apple.com/?q=%1$s
+- OpenStreetMap: https://www.openstreetmap.org/search?query=%1$s</string>
 	<key>uidata</key>
 	<dict>
 		<key>1E3FDDF5-0EBE-4278-AA06-ABE78C9B53E1</key>
@@ -313,6 +330,8 @@
 	</dict>
 	<key>variables</key>
 	<dict>
+		<key>MAPS_URL</key>
+		<string>https://www.google.com/maps/search/?api=1&amp;query=%1$s&amp;query_place_id=%2$s</string>
 		<key>PRICE</key>
 		<string></string>
 	</dict>
@@ -321,7 +340,7 @@
 		<string>PRICE</string>
 	</array>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.1.0</string>
 	<key>webaddress</key>
 	<string>http://jonathanstroebele.de</string>
 </dict>

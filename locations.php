@@ -24,8 +24,8 @@ foreach($config['locations'] as $location) {
 			],
 			'alt' => [
 				'valid' => true,
-				'arg' => sprintf($config['google_maps_url'], $location['address'], $location['place_id']),
-				'subtitle' => 'Open in Google Maps',
+				'arg' => sprintf($config['maps_url'], $location['address'], $location['place_id']),
+				'subtitle' => 'Show on map',
 			]
 		]
 	];

@@ -8,7 +8,18 @@ return [
 	 */
 	'mensa_url' => 'https://speiseplan.studierendenwerk-hamburg.de/index.php/de/cafeteria/show/id/%s',
 
-	'google_maps_url' => 'https://www.google.com/maps/search/?api=1&query=%s&query_place_id=%s',
+	/**
+	 * URL for the map service provider, first argugment to sprintf() is the 
+	 * - %1$s - address
+	 * - %2$s - Google place id
+	 * 
+	 * Maps providers: 
+	 * - Goggle Maps: https://www.google.com/maps/search/?api=1&query=%1$s&query_place_id=%2$s
+	 * - Apple Maps: https://maps.apple.com/?q=%1$s
+	 * - OpenStreetMap: https://www.openstreetmap.org/search?query=%1$s
+	 * 
+	 */
+	'maps_url' => (isset($_ENV['MAPS_URL'])) ? $_ENV['MAPS_URL'] : 'https://www.openstreetmap.org/search?query=%1$s',
 
 	'github_data_repo_url' => 'https://raw.githubusercontent.com/HAWHHCalendarBot/mensa-data/master/%s/%s.json',
 
